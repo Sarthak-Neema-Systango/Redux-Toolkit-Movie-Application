@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Header></Header>
         <Switch>
-          <Route path='/' component={Home} />
+          <Route path='/' exact component={Home} />
           <Route path="/movie/:imdbID" component={MovieDetail} />
           <Route component={PageNotFound} />
         </Switch>

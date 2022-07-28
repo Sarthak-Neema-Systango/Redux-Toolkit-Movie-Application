@@ -1,0 +1,38 @@
+@import "../../common/colors.scss";
+
+.movie-list {
+  margin: 20px 0px;
+
+  h2 {
+    color: $font-secondary;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 90px;
+  }
+
+  .card-top {
+    img {
+      object-fit: cover;
+      min-height: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .card-item {
+    flex: 20%;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .card-inner {
+    height: 100%;
+    margin: 0 16px 30px 0;
+    background: $secondary-color;
+  }
+}
